@@ -38,9 +38,34 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "LexHare",
-        "url": "https://lex-hare.github.io/"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://lex-hare.github.io/#website",
+            "name": "LexHare",
+            "url": "https://lex-hare.github.io/",
+            "inLanguage": "zh-TW",
+            "publisher": { "@id": "https://lex-hare.github.io/#organization" }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://lex-hare.github.io/#organization",
+            "name": "LexHare",
+            "url": "https://lex-hare.github.io/",
+            "logo": "https://lex-hare.github.io/favicon/android-chrome-512x512.png",
+            "sameAs": ["https://github.com/lex-hare"]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://lex-hare.github.io/#webpage",
+            "url": "https://lex-hare.github.io/",
+            "name": "LexHare: 提供學習與研究臺灣法律的開放工具",
+            "description": "LexHare 是提供學習與研究臺灣法律之開放工具的團隊。",
+            "inLanguage": "zh-TW",
+            "isPartOf": { "@id": "https://lex-hare.github.io/#website" },
+            "about": { "@id": "https://lex-hare.github.io/#organization" }
+          }
+        ]
       }
     </script>
     <meta
